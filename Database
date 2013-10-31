@@ -7,3 +7,57 @@
 -- --------------------------------------------------------
 
 
+
+-----------------------------------------------------------
+--------INICIO TABLA EMPRESA (JACOBO SEGOVIA)--------------
+-----------------------------------------------------------
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `empresa`
+--
+
+CREATE TABLE IF NOT EXISTS `empresa` (
+  `id` int(6) NOT NULL AUTO_INCREMENT,
+  `id_usuario` int(6) DEFAULT NULL COMMENT 'referencia usuario',
+  `nombre` varchar(255) COLLATE utf8_spanish2_ci DEFAULT NULL,
+  `cif` varchar(255) COLLATE utf8_spanish2_ci DEFAULT NULL,
+  `direccion` varchar(255) COLLATE utf8_spanish2_ci DEFAULT NULL,
+  `localidad` varchar(255) COLLATE utf8_spanish2_ci DEFAULT NULL,
+  `provincia` varchar(255) COLLATE utf8_spanish2_ci DEFAULT NULL,
+  `pais` varchar(255) COLLATE utf8_spanish2_ci DEFAULT NULL,
+  `telefono` varchar(255) COLLATE utf8_spanish2_ci DEFAULT NULL,
+  `fax` varchar(255) COLLATE utf8_spanish2_ci DEFAULT NULL,
+  `actividad` varchar(255) COLLATE utf8_spanish2_ci DEFAULT NULL,
+  `nombrecontacto` varchar(255) COLLATE utf8_spanish2_ci DEFAULT NULL,
+  `emailcontacto` varchar(255) COLLATE utf8_spanish2_ci DEFAULT NULL,
+  `validada` varchar(255) COLLATE utf8_spanish2_ci DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci AUTO_INCREMENT=11 ;
+
+--
+-- Volcado de datos para la tabla `empresa`
+--
+
+INSERT INTO `empresa` (`id`, `id_usuario`, `nombre`, `cif`, `direccion`, `localidad`, `provincia`, `pais`, `telefono`, `fax`, `actividad`, `nombrecontacto`, `emailcontacto`, `validada`) VALUES
+(1, 21, 'CapCom', 'B82101692', 'C/ ALBASANZ 65 - EDIFICIO AMERICA III', 'MADRID', 'MADRID', 'ESPAÑA', '901667337', '901667338', 'Explotación de actividades de telecomunicaciones y videojuegos', 'Marco', 'marco-tec@capcom.com', '1'),
+(2, 22, 'Teleco', 'B82141692', 'C/Zapadores, 7', 'Valencia', 'Valencia', 'España', '962700151', '962700152', 'Explotación de actividades de telecomunicaciones', 'Fernando', 'fernando@teleco.com', '0'),
+(3, 23, 'Mercadona S.A.', 'B82701692', 'C/Alguina, SN', 'Madrid', 'Madrid', '28083', '920120222', '920120222', 'Cadena de supermercados', 'Mauricio', 'mauricio@mercadona.com', '1'),
+(4, 24, 'Vistaprint', 'B82700692', 'C/Sagunto, 55', 'Valladolid', '47071', 'España', '912001423', NULL, 'Material de publicidad', 'Carmen', 'carmen@vistaprint.com', '0'),
+(5, 25, 'Google', 'B82700092', 'Plaza Pablo Ruiz Picasso, 1', 'Madrid', 'Madrid', 'España', '917486400', '917486402', 'Servicios de internet y busqueda', 'Ana', 'ana-spain@google.com', '0'),
+(6, 26, 'Konami', 'B87801692', 'Paseo de la Castellana, 91. 5B', 'Madrid', 'Madrid', 'España', '902111573', '915155088', 'Desarrollo de videojuegos', 'Carlos', 'carlos-spain@konami.com', '1'),
+(7, 28, 'Orange', 'B82101644', 'Calle de Menorca, 19', 'Valencia', 'Valencia', 'España', '963319976', NULL, 'Telecomunicaciones y telefonia', 'francisco', 'fran@orange.com', '0'),
+(8, 29, 'Samsung', 'B82444692', 'C/Alabasta, 70', 'Barcelona', 'Barcelona', 'España', '910112335', '910112336', 'Fabricación de dispositivos moviles', 'carla', 'carla-spain@samsung.com', '1'),
+(9, 27, 'Gigabyte', 'B82400192', 'Bau Chiang Road, 6', 'Hsin-Tien', 'Taipei', 'Taiwan', '+886289124000', '+886289124003', 'Fabricación de componentes informáticos.', 'sui', 'sui-taiwan@gigabyte.com', '0'),
+(10, 30, 'Microsoft', 'B82101640', 'C/Sagunto, 4', 'Madrid', 'Madrid', 'España', '902197198', '917547010', 'Desarrollo sistema operativo y consola', 'sara', 'comercial-sara@microsoft.com', '1');
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+
+
+-----------------------------------------------------------
+----------FIN TABLA EMPRESA (JACOBO SEGOVIA)--------------
+-----------------------------------------------------------
