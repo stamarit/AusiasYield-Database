@@ -6,4 +6,49 @@
 -- 
 -- --------------------------------------------------------
 
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
 
+--
+-- Tabla Creada por Eduardo Membrillas belenguer
+--
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `backlog`
+--
+
+CREATE TABLE IF NOT EXISTS `backlog` (
+  `id` int(6) NOT NULL AUTO_INCREMENT,
+  `enunciado` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `descripciondetallado` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `id_requerimiento` int(6) DEFAULT NULL,
+  `fechainicioprevista` date DEFAULT NULL,
+  `fechafinprevista` date DEFAULT NULL,
+  `fechainicio` date DEFAULT NULL,
+  `fechafin` date DEFAULT NULL,
+  `id_usuario` int(6) DEFAULT NULL,
+  `horasduracionprevista` int(6) DEFAULT NULL,
+  `porcentajecompletado` int(6) DEFAULT NULL,
+  `fechaalta` date DEFAULT NULL,
+  `sprint` int(6) DEFAULT NULL,
+  `release` int(6) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=11 ;
+
+--
+-- Volcado de datos para la tabla `backlog`
+--
+
+INSERT INTO `backlog` (`id`, `enunciado`, `descripciondetallado`, `id_requerimiento`, `fechainicioprevista`, `fechafinprevista`, `fechainicio`, `fechafin`, `id_usuario`, `horasduracionprevista`, `porcentajecompletado`, `fechaalta`, `sprint`, `release`) VALUES
+(1, 'Mantenimiento de Usuarios: Alta', 'Dar de alta usuarios en la base de datos ', 1, '2013-10-31', '2013-12-31', '2013-11-04', '2013-11-30', 1, 40, 50, '2013-10-28', 1, 1),
+(2, 'Mantenimiento de Usuarios: Modificar', 'Modificar usuarios en la base de datos ', 2, '2013-10-31', '2013-12-31', '2013-11-04', '2013-11-30', 2, 30, 40, '2013-10-29', 2, 2),
+(3, 'Mantenimiento de Usuarios: Eliminar', 'Eliminar usuarios en la base de datos ', 3, '2013-10-31', '2013-12-31', '2013-11-04', '2013-11-30', 3, 35, 60, '2013-10-29', 3, 3),
+(4, 'Diseño de Interfaz', 'Desarrollo en Entorno de Cliente: HTML y CSS', 4, '2013-10-01', '2014-01-31', '2013-11-10', '2014-02-28', 6, 90, 15, '2013-10-01', 4, 4),
+(5, 'Listado de Usuarios', 'Crear aplicación de listados de clientes', 5, '2013-10-01', '2014-01-31', '2013-11-10', '2014-02-28', 3, 90, 15, '2013-10-01', 1, 1),
+(6, 'Mantenimiento de Profesores', 'Dar de alta, modificar y eliminar profesores', 1, '2013-10-31', '2013-12-31', '2013-11-04', '2013-11-30', 6, 15, 10, '2013-10-29', 3, 3),
+(7, 'Mantenimiento de Cuestionarios', 'Crear Cuestionarios, modificarlos y eliminarlos', 8, '2013-10-31', '2013-12-31', '2013-11-04', '2013-11-30', 8, 40, 25, '2013-10-29', 3, 3),
+(8, 'Mantenimiento de Bolsa', 'Crear ofertas de trabajo y vincularlas con los usuarios', 1, '2013-10-01', '2014-01-31', '2013-11-10', '2014-02-28', 9, 85, 5, '2013-10-01', 4, 4),
+(9, 'Trabajo de Campo', 'Realizar recopilacion de datos para añadir usuarios a la base de datos', 4, '2013-10-02', '2013-12-12', '2013-11-17', '2013-11-30', 5, 15, 0, '2013-10-01', 2, 2),
+(10, 'Test de Proyecto', 'Comprobación de errores en el Proyexto', 1, '2013-10-01', '2013-11-09', '2013-10-07', '2013-11-16', 1, 20, 10, '2013-10-01', 3, 3);
