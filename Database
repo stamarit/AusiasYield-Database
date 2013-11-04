@@ -218,3 +218,80 @@ INSERT INTO `entrega` (`id`, `id_documento`, `id_actividad`, `nota`, `fecha`) VA
 (10, 10, 10, 7, '2013-10-25');
 
 
+
+--
+-- Estructura de tabla para la tabla `bolsa`
+-- Sergio Martín Tárraga
+--
+
+CREATE TABLE IF NOT EXISTS `bolsa` (
+  `id` int(6) NOT NULL AUTO_INCREMENT,
+  `id_documento1` int(6) DEFAULT NULL,
+  `id_documento2` int(6) DEFAULT NULL,
+  `fecha` date DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8_unicode_ci AUTO_INCREMENT=11 ;
+
+--
+-- Volcado de datos para la tabla `bolsa`
+--
+
+INSERT INTO `bolsa` (`id`, `id_documento1`, `id_documento2`, `fecha`) VALUES
+(1, 6, 1, '2013-10-31'),
+(2, 5, 2, '2013-10-30'),
+(3, 5, 3, '2013-10-29'),
+(4, 1, 4, '2013-10-28'),
+(5, 6, 5, '2013-10-27'),
+(6, 5, 6, '2013-10-26'),
+(7, 4, 7, '2013-10-25'),
+(8, 3, 8, '2013-10-24'),
+(9, 2, 9, '2013-10-23'),
+(10, 1, 10, '2013-10-22');
+
+--
+-- Estructura de tabla para la tabla `usuario`
+-- Sergio Martín Tárraga
+--
+
+CREATE TABLE IF NOT EXISTS `usuario` (
+  `id` int(6) NOT NULL AUTO_INCREMENT,
+  `login` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `password` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=31 ;
+
+--
+-- Volcado de datos para la tabla `usuario`
+--
+
+INSERT INTO `usuario` (`id`, `login`, `password`) VALUES
+(1, 'pepe', 'pepe'),
+(2, 'juan', 'juan'),
+(3, 'maria', 'maria'),
+(4, 'antonia', 'antonia'),
+(5, 'edu', 'edu'),
+(6, 'jose', 'jose'),
+(7, 'silvia', 'silvia'),
+(8, 'pedro', 'pedro'),
+(9, 'raquel', 'raquel'),
+(10, 'daniel', 'daniel'),
+(11, 'rafael', 'rafael'),
+(12, 'juan', 'juan'),
+(13, 'elena', 'elena'),
+(14, 'luis', 'luis'),
+(15, 'alba', 'alba'),
+(16, 'amparo', 'amparo'),
+(17, 'ambrosio', 'ambrosio'),
+(18, 'luisa', 'luisa'),
+(19, 'leon', 'leon'),
+(20, 'rosa', 'rosa'),
+(21, 'capcom', 'capcom'),
+(22, 'teleco', 'teleco'),
+(23, 'mercadona', 'mercadona'),
+(24, 'vistaprint', 'vistaprint'),
+(25, 'google', 'google'),
+(26, 'konami', 'konami'),
+(27, 'orange', 'orange'),
+(28, 'samsung', 'samsung'),
+(29, 'gigabyte', 'gigabyte'),
+(30, 'microsoft', 'microsoft');
