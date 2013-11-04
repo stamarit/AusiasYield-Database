@@ -55,6 +55,7 @@ INSERT INTO `alumno` (`id`, `id_usuario`, `dni`, `numexpediente`, `nombre`, `ape
 (10, 10, '22144457F', '00000010', 'Daniel', 'Bonti', 'Basta', 'Hombre', 'C/La higuera 45-1', '46211', 'Albacete', 'Albacete', '677845021', 'Daniel@hotmail.com', 'si');
 
 
+<<<<<<< HEAD
 -- Tabla Creada por Eduardo Membrillas belenguer
 --
 
@@ -127,4 +128,35 @@ INSERT INTO `estado` (`id`, `nombre`) VALUES
 (8, 'asignada'),
 (9, 'no_asignada'),
 (10, 'fase_test');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `actividad`
+--
+
+CREATE TABLE IF NOT EXISTS `actividad` (
+  `id` int(20) NOT NULL AUTO_INCREMENT,
+  `enunciado` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `fecha` date DEFAULT NULL,
+  `evaluacion` int(1) DEFAULT NULL,
+  `activo` tinyint(1) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=11 ;
+
+--
+-- Volcado de datos para la tabla `actividad`
+--
+
+INSERT INTO `actividad` (`id`, `enunciado`, `fecha`, `evaluacion`, `activo`) VALUES
+(1, 'Actividad01', '2013-10-31', 1, 1),
+(2, 'Actividad02', '2013-10-31', 1, 1),
+(3, 'Actividad03', '2013-11-02', 1, 1),
+(4, 'Actividad04', '2013-11-15', 1, 1),
+(5, 'Actividad05', '2013-12-15', 1, 1),
+(6, 'Actividad06', '2014-01-20', 2, 1),
+(7, 'Actividad07', '2014-01-29', 2, 1),
+(8, 'Actividad08', '2014-02-15', 2, 1),
+(9, 'Actividad09', '2014-03-02', 2, 1),
+(10, 'Actividad10', '2014-03-14', 2, 1);
 
