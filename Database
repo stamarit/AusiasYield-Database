@@ -160,6 +160,32 @@ INSERT INTO `actividad` (`id`, `enunciado`, `fecha`, `evaluacion`, `activo`) VAL
 (9, 'Actividad09', '2014-03-02', 2, 1),
 (10, 'Actividad10', '2014-03-14', 2, 1);
 
+-- Antonio Navarro
+-- Estructura de tabla para la tabla `tipodocumento`
+--
+
+CREATE TABLE IF NOT EXISTS `tipodocumento` (
+  `id` int(6) NOT NULL AUTO_INCREMENT,
+  `descripcion` varchar(255) DEFAULT NULL,
+  `privado` tinyint(4) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=11 ;
+
+-- Antonio Navarro
+-- Volcado de datos para la tabla `tipodocumento`
+--
+
+INSERT INTO `tipodocumento` (`id`, `descripcion`, `privado`) VALUES
+(1, 'oferta de trabajo', 1),
+(2, 'currículum', 1),
+(3, 'actividad', 1),
+(4, 'experencia', 1),
+(5, 'formación', 1),
+(6, 'valía', 1),
+(7, 'inscripción', 1),
+(8, 'solicitud', 1),
+(9, 'bolsa de trabajo', 1),
+(10, 'idiomas', 1);
 
 
 
