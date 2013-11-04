@@ -513,6 +513,40 @@ INSERT INTO `stream` (`id`, `id_usuario`, `fecha`, `contenido`) VALUES
 
 
 
+--Jorge Caballero
+-- Estructura de tabla para la tabla `incidencias`
+--
+
+CREATE TABLE IF NOT EXISTS `incidencias` (
+  `id` int(6) NOT NULL AUTO_INCREMENT,
+  `resumen` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `cambios` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `id_estado` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `id_repositorio` int(6) DEFAULT NULL,
+  `id_usuario` int(6) DEFAULT NULL,
+  `fechaalta` date DEFAULT NULL,
+  `fecharesolucion` date DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=11 ;
+
+--Jorge Caballero
+-- Volcado de datos para la tabla `incidencias`
+--
+
+INSERT INTO `incidencias` (`id`, `resumen`, `cambios`, `id_estado`, `id_repositorio`, `id_usuario`, `fechaalta`, `fecharesolucion`) VALUES
+(1, 'Incidencia 1', 'Cambio 1', NULL, NULL, NULL, '2013-11-03', '2013-11-04'),
+(2, 'Incidencia 2', 'Cambio 2', NULL, NULL, NULL, '2013-11-03', '2013-11-04'),
+(3, 'Incidencia 3', 'Cambio 3', NULL, NULL, NULL, '2013-11-03', '2013-11-04'),
+(4, 'Incidencia 4', 'Cambio 4', NULL, NULL, NULL, '2013-11-03', '2013-11-04'),
+(5, 'Incidencia 5', 'Cambio 5', NULL, NULL, NULL, '2013-11-03', '2013-11-04'),
+(6, 'Incidencia 6', 'Cambio 6', NULL, NULL, NULL, '2013-11-03', '2013-11-04'),
+(7, 'Incidencia 7', 'Cambio 7', NULL, NULL, NULL, '2013-11-03', '2013-11-04'),
+(8, 'Incidencia 8', 'Cambio 8', NULL, NULL, NULL, '2013-11-03', '2013-11-04'),
+(9, 'Incidencia 9', 'Cambio 9', NULL, NULL, NULL, '2013-11-03', '2013-11-04'),
+(10, 'Incidencia 10', 'Cambio 10', NULL, NULL, NULL, '2013-11-03', '2013-11-04');
+
+
+
 
 
 
