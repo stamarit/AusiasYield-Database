@@ -260,7 +260,7 @@ CREATE TABLE IF NOT EXISTS `bolsa` (
   `id_documento2` int(6) DEFAULT NULL,
   `fecha` date DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8_unicode_ci AUTO_INCREMENT=11 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=11 ;
 
 --
 -- Volcado de datos para la tabla `bolsa`
