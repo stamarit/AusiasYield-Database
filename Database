@@ -131,7 +131,7 @@ INSERT INTO `estado` (`id`, `nombre`) VALUES
 
 -- --------------------------------------------------------
 
---
+-- Javier Bonet
 -- Estructura de tabla para la tabla `actividad`
 --
 
@@ -159,4 +159,7 @@ INSERT INTO `actividad` (`id`, `enunciado`, `fecha`, `evaluacion`, `activo`) VAL
 (8, 'Actividad08', '2014-02-15', 2, 1),
 (9, 'Actividad09', '2014-03-02', 2, 1),
 (10, 'Actividad10', '2014-03-14', 2, 1);
+
+
+
 
