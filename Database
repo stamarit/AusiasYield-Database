@@ -217,9 +217,8 @@ INSERT INTO `requerimiento` (`id`, `enunciado`, `fechaalta`) VALUES
 (11, 8, '2013-11-04'),
 (12, 8, '2013-11-04');
 
---
--- Dani
---
+
+--- Dani
 
 CREATE TABLE IF NOT EXISTS `entrega` (
   `id` int(50) NOT NULL AUTO_INCREMENT,
@@ -229,7 +228,7 @@ CREATE TABLE IF NOT EXISTS `entrega` (
   `fecha` date DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=11 ;
-
+>>>>>>> origin/master
 
 --
 -- Volcado de datos para la tabla `entrega`
@@ -260,7 +259,7 @@ CREATE TABLE IF NOT EXISTS `bolsa` (
   `id_documento2` int(6) DEFAULT NULL,
   `fecha` date DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=11 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8_unicode_ci AUTO_INCREMENT=11 ;
 
 --
 -- Volcado de datos para la tabla `bolsa`
@@ -413,17 +412,20 @@ INSERT INTO `empresa` (`id`, `id_usuario`, `nombre`, `cif`, `direccion`, `locali
 (9, 27, 'Gigabyte', 'B82400192', 'Bau Chiang Road, 6', 'Hsin-Tien', 'Taipei', 'Taiwan', '+886289124000', '+886289124003', 'Fabricación de componentes informáticos.', 'sui', 'sui-taiwan@gigabyte.com', '0'),
 (10, 30, 'Microsoft', 'B82101640', 'C/Sagunto, 4', 'Madrid', 'Madrid', 'España', '902197198', '917547010', 'Desarrollo sistema operativo y consola', 'sara', 'comercial-sara@microsoft.com', '1');
 
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 
 
 
--- ---------------------------------------------------------
--- FIN TABLA EMPRESA (JACOBO SEGOVIA)
--- --------------------------------------------------------
+-----------------------------------------------------------
+----------FIN TABLA EMPRESA (JACOBO SEGOVIA)--------------
+-----------------------------------------------------------
 
 
--- --------------------------------------------------------
--- INICIO TABLA VOTOCOMENTARIO (JACOBO SEGOVIA)---------
--- --------------------------------------------------------
+-----------------------------------------------------------
+------INICIO TABLA VOTOCOMENTARIO (JACOBO SEGOVIA)---------
+-----------------------------------------------------------
 
 -- --------------------------------------------------------
 
@@ -455,15 +457,19 @@ INSERT INTO `votocomentario` (`id`, `id_comentario`, `id_usuario`, `valor`) VALU
 (9, 6, 3, 7),
 (10, 2, 2, 5);
 
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 
--- ---------------------------------------------------------
--- FIN TABLA VOTOCOMENTARIO (JACOBO SEGOVIA)---------
--- ---------------------------------------------------------
+
+-----------------------------------------------------------
+---------FIN TABLA VOTOCOMENTARIO (JACOBO SEGOVIA)---------
+-----------------------------------------------------------
 
 
--- --------------------------------------------------------
--- INICIO TABLA VOTODOCUMENTO (JACOBO SEGOVIA)---------
--- --------------------------------------------------------
+-----------------------------------------------------------
+-------INICIO TABLA VOTODOCUMENTO (JACOBO SEGOVIA)---------
+-----------------------------------------------------------
 
 --
 -- Estructura de tabla para la tabla `votodocumento`
@@ -492,6 +498,10 @@ INSERT INTO `votodocumento` (`id`, `id_documento`, `id_usuario`, `valor`) VALUES
 (8, 9, 4, 6),
 (9, 3, 4, 7),
 (10, 5, 5, 4);
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 
 
 -----------------------------------------------------------
@@ -532,7 +542,7 @@ INSERT INTO `stream` (`id`, `id_usuario`, `fecha`, `contenido`) VALUES
 
 
 
--- Jorge Caballero
+--Jorge Caballero
 -- Estructura de tabla para la tabla `incidencias`
 --
 
@@ -568,9 +578,11 @@ INSERT INTO `incidencias` (`id`, `resumen`, `cambios`, `id_estado`, `id_reposito
 
 
 
---
--- Ana Riquelme
--- Estructura de tabla para la tabla `repositorio`
+
+---------------------------------------------------------------------------------------------
+
+Ana Riquelme
+Estructura de tabla para la tabla `repositorio`
 --
 
 CREATE TABLE IF NOT EXISTS `repositorio` (
@@ -643,168 +655,6 @@ INSERT INTO `actividadoffline` (`id`, `enunciado`, `fecha`, `calificacion`, `eva
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `comentario`
---
-
-CREATE TABLE IF NOT EXISTS `comentario` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `titulo` varchar(255) NOT NULL,
-  `contenido` varchar(255) NOT NULL,
-  `date` date NOT NULL,
-  `id_usuario` int(11) NOT NULL,
-  `id_documento` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=11 ;
-
---
--- Volcado de datos para la tabla `comentario`
---
-
-INSERT INTO `comentario` (`id`, `titulo`, `contenido`, `date`, `id_usuario`, `id_documento`) VALUES
-(1, 'Buen trabajo', 'Este comentario a sido de gran ayuda ', '2013-11-14', 4, 2),
-(2, 'Error', 'Este documento tiene un fallo leve que se puede corregir', '2013-12-10', 7, 3),
-(3, 'Error fatal', 'No hay forma de cogerlo por ningun lado', '2014-01-05', 5, 9),
-(4, 'Cuestion', 'No entiendo esta parte del documento', '2013-10-22', 1, 8),
-(5, 'Falta una parte', 'este documento le falta una parte importante', '2013-03-11', 3, 7),
-(6, 'Gracias', 'Este es un trabajo bien hecho que necesitaba para acabar el mio', '2014-01-20', 6, 2),
-(7, 'Bien hecho', 'este trabajo esta bien presentado y completo', '2012-07-16', 3, 8),
-(8, 'Error al subirlo', 'este documento esta mal subido y no se puede abrir bien', '2014-08-19', 5, 10),
-(9, 'Alpliacion', 'Estaria bien si se pudiera ampliar el documento', '2012-09-08', 10, 4),
-(10, 'Documeto perdido', 'Este documento a sido borrado', '2015-03-17', 5, 9);
-
-
-
-
-
-
-
-
-
--- --------Inicio tabla Contestacion ENRIQUE GIMENO---------------
-
-
---
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `contestacion`
---
-
-CREATE TABLE IF NOT EXISTS `contestacion` (
-  `id` int(6) NOT NULL AUTO_INCREMENT,
-  `id_usuario` int(6) DEFAULT NULL,
-  `id_pregunta` int(6) DEFAULT NULL,
-  `id_opcion` int(6) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=11 ;
-
---
--- Volcado de datos para la tabla `contestacion`
---
-
-INSERT INTO `contestacion` (`id`, `id_usuario`, `id_pregunta`, `id_opcion`) VALUES
-(1, 1, 2, 1),
-(2, 2, 1, 2),
-(3, 3, 9, 3),
-(4, 4, 4, 4),
-(5, 5, 8, 1),
-(6, 6, 7, 2),
-(7, 7, 6, 3),
-(8, 8, 5, 4),
-(9, 9, 3, 1),
-(10, 10, 10, 2);
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-
-
--- ----------------Fin tabla Contestacion ENRIQUE GIMENO-------------------------
-
-
-
-
--- --------------Inicio tabla Pegunta ENRIQUE GIMENO-----------------------------
-
-
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `pregunta`
---
-
-CREATE TABLE IF NOT EXISTS `pregunta` (
-  `id` int(6) NOT NULL AUTO_INCREMENT,
-  `descripcion` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `id_cuestionario` int(6) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=11 ;
-
---
--- Volcado de datos para la tabla `pregunta`
---
-
-INSERT INTO `pregunta` (`id`, `descripcion`, `id_cuestionario`) VALUES
-(1, '¿Cuál de los siguientes periféricos es de entrada/salida?\r\n', 1),
-(2, 'La unidad de CD-ROM, ¿es un periférico?\r\n', 2),
-(3, 'Cuando utilizamos el término QWERTY, nos estamos refiriendo:\r\n', 3),
-(4, '¿Cuál es el sistema de numeración empleado por los ordenadores?\r\n', 4),
-(5, '¿Cuál de las siguientes unidades de información es la de mayor capacidad?\r\n', 5),
-(6, 'Si a una impresora hubiese que cambiarle el tóner, ¿a qué tipo de\r\nellas sería?\r\n', 6),
-(7, 'El dispositivo que se utiliza para la digitalización de imágenes y texto se denomina:\r\n', 7),
-(8, 'La cantidad mínima de información que podemos representar en un\r\nordenador se denomina:\r\n', 8),
-(9, '¿A qué denominamos byte?\r\n', 9),
-(10, '¿Cuál de los siguientes software origina las aplicaciones que manejan los usuarios finales?\r\n', 10);
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-
-
--- ------------------Fin tabla Pregunta ENRIQUE GIMENO----------------------------
-
-
-
-
-
-
-
---
--- Estructura de tabla para la tabla `lenguaje`
--- By Diana Ortega Ortega
---
-
-CREATE TABLE IF NOT EXISTS `lenguaje` (
-  `id` int(6) NOT NULL AUTO_INCREMENT,
-  `nombre` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=14 ;
-
---
--- Volcado de datos para la tabla `lenguaje`
---
-
-INSERT INTO `lenguaje` (`id`, `nombre`) VALUES
-(1, 'java'),
-(2, 'javascript'),
-(3, 'php'),
-(4, 'css'),
-(5, 'html'),
-(6, 'xml'),
-(7, 'json'),
-(8, 'ruby'),
-(9, 'phyton'),
-(10, 'scala');
-
-
-
-
-
--- --------------------------------------------------------
-
--- alejandro
 -- Estructura de tabla para la tabla `meta_documento`
 --
 
@@ -830,5 +680,3 @@ INSERT INTO `meta_documento` (`Id`, `titulo`, `fecha`) VALUES
 (8, 'buen titulo(8)', '2013-11-08'),
 (9, 'buen titulo(9)', '2013-11-09'),
 (10, 'buen titulo(10)', '2013-11-10');
-
-
