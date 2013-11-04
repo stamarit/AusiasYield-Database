@@ -478,3 +478,41 @@ INSERT INTO `votodocumento` (`id`, `id_documento`, `id_usuario`, `valor`) VALUES
 -----------------------------------------------------------
 ----------FIN TABLA VOTODOCUMENTO (JACOBO SEGOVIA)---------
 -----------------------------------------------------------
+
+
+
+
+
+-- Estructura de tabla para la tabla `stream`
+-- by Juan Pérez Godesart
+
+CREATE TABLE IF NOT EXISTS `stream` (
+  `id` int(6) NOT NULL AUTO_INCREMENT,
+  `id_usuario` int(6) DEFAULT NULL,
+  `fecha` date DEFAULT NULL,
+  `contenido` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=11 ;
+
+--
+-- Volcado de datos para la tabla `stream`
+--
+
+INSERT INTO `stream` (`id`, `id_usuario`, `fecha`, `contenido`) VALUES
+(1, 1, '2013-11-01', 'Registro 1'),
+(2, 2, '2013-11-02', 'Registro2'),
+(3, 3, '2013-11-02', 'Resgistro3'),
+(4, 4, '2013-11-01', 'Resgistro4'),
+(5, 5, '2013-11-01', 'Registro5'),
+(6, 6, '2013-11-01', 'Registro6'),
+(7, 7, '2013-11-01', 'Registro7'),
+(8, 8, '2013-11-01', 'Registro8'),
+(9, 9, '2013-11-01', 'Registro9'),
+(10, 10, '2013-11-01', 'Registro10');
+
+
+
+
+
+
+
