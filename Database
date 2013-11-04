@@ -229,7 +229,7 @@ CREATE TABLE IF NOT EXISTS `entrega` (
   `fecha` date DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=11 ;
->>>>>>> origin/master
+
 
 --
 -- Volcado de datos para la tabla `entrega`
