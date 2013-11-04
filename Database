@@ -98,3 +98,33 @@ INSERT INTO `backlog` (`id`, `enunciado`, `descripciondetallado`, `id_requerimie
 (9, 'Trabajo de Campo', 'Realizar recopilacion de datos para añadir usuarios a la base de datos', 4, '2013-10-02', '2013-12-12', '2013-11-17', '2013-11-30', 5, 15, 0, '2013-10-01', 2, 2),
 (10, 'Test de Proyecto', 'Comprobación de errores en el Proyexto', 1, '2013-10-01', '2013-11-09', '2013-10-07', '2013-11-16', 1, 20, 10, '2013-10-01', 3, 3);
 
+
+
+--
+-- Estructura de tabla para la tabla `estado`
+-- By Alvaro Crego
+--
+
+CREATE TABLE IF NOT EXISTS `estado` (
+  `id` int(6) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=11 ;
+
+--
+-- Volcado de datos para la tabla `estado`
+-- By Alvaro Crego
+--
+
+INSERT INTO `estado` (`id`, `nombre`) VALUES
+(1, 'abierta'),
+(2, 'en_estudio'),
+(3, 'resuelta'),
+(4, 'integrada'),
+(5, 'fase_inicial'),
+(6, 'fase_intermedia'),
+(7, 'fase_final'),
+(8, 'asignada'),
+(9, 'no_asignada'),
+(10, 'fase_test');
+
