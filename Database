@@ -55,7 +55,7 @@ INSERT INTO `alumno` (`id`, `id_usuario`, `dni`, `numexpediente`, `nombre`, `ape
 (10, 10, '22144457F', '00000010', 'Daniel', 'Bonti', 'Basta', 'Hombre', 'C/La higuera 45-1', '46211', 'Albacete', 'Albacete', '677845021', 'Daniel@hotmail.com', 'si');
 
 
-<<<<<<< HEAD
+
 -- Tabla Creada por Eduardo Membrillas belenguer
 --
 
