@@ -620,5 +620,35 @@ INSERT INTO `repositorio` (`id`, `titulo`, `contenido`, `id_usuario`, `id_lengua
 
 
 
+--
+-- Estructura de tabla para la tabla `actividadoffline`
+-- by Salva Tamarit
+
+CREATE TABLE IF NOT EXISTS `actividadoffline` (
+  `id` int(6) NOT NULL AUTO_INCREMENT,
+  `enunciado` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `fecha` date DEFAULT NULL,
+  `calificacion` double(5,2) DEFAULT NULL,
+  `evaluacion` int(6) DEFAULT NULL,
+  `activo` tinyint(4) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=10 ;
+
+--
+-- Volcado de datos para la tabla `actividadoffline`
+--
+
+INSERT INTO `actividadoffline` (`id`, `enunciado`, `fecha`, `calificacion`, `evaluacion`, `activo`) VALUES
+(1, 'enunciado uno', '2013-11-04', 5.30, 1, 0),
+(2, 'enunciado dos', '2013-11-04', 6.50, 1, 1),
+(3, 'enunciado tres', '2013-11-05', 4.50, 2, 1),
+(4, 'enunciado cuatro', '2013-11-04', 8.50, 2, 1),
+(5, 'enunciado seis', '2013-11-04', 9.90, 2, 1),
+(6, 'enunciado siete', '2013-11-04', 10.00, 3, 1),
+(7, 'enunciado ocho', '2013-11-04', 8.70, 2, 0),
+(8, 'enunciado nueve', '2013-11-04', 5.00, 3, 0),
+(9, 'enunciado diez', '2013-11-04', 9.60, 3, 1);
+
+
 
 
