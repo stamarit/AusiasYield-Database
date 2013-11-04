@@ -188,4 +188,33 @@ INSERT INTO `tipodocumento` (`id`, `descripcion`, `privado`) VALUES
 (10, 'idiomas', 1);
 
 
+-- Cristina Martín Molina
+-- Estructura de tabla para la tabla `requerimiento`
+--
+
+CREATE TABLE IF NOT EXISTS `requerimiento` (
+  `id` int(6) NOT NULL AUTO_INCREMENT,
+  `enunciado` int(6) DEFAULT NULL,
+  `fechaalta` date DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=13 ;
+
+-- Cristina Martín Molina
+-- Volcado de datos para la tabla `requerimiento`
+--
+
+INSERT INTO `requerimiento` (`id`, `enunciado`, `fechaalta`) VALUES
+(1, 0, '2013-11-04'),
+(2, 1, '2013-10-04'),
+(3, 3, '2013-11-04'),
+(4, 2, '2013-11-04'),
+(5, 10, '2013-11-04'),
+(6, 4, '2013-11-04'),
+(7, 5, '2013-11-04'),
+(8, 7, '2013-11-04'),
+(9, 9, '2013-11-04'),
+(10, 6, '2013-11-04'),
+(11, 8, '2013-11-04'),
+(12, 8, '2013-11-04');
+
 
