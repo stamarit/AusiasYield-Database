@@ -579,3 +579,46 @@ INSERT INTO `incidencias` (`id`, `resumen`, `cambios`, `id_estado`, `id_reposito
 
 
 
+---------------------------------------------------------------------------------------------
+
+Ana Riquelme
+Estructura de tabla para la tabla `repositorio`
+--
+
+CREATE TABLE IF NOT EXISTS `repositorio` (
+  `id` int(6) NOT NULL AUTO_INCREMENT,
+  `titulo` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `contenido` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `id_usuario` int(6) DEFAULT NULL,
+  `id_lenguaje` int(6) DEFAULT NULL,
+  `id_documento` int(6) DEFAULT NULL,
+  `fecha` date DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=11 ;
+
+--
+-- Volcado de datos para la tabla `repositorio`
+--
+
+INSERT INTO `repositorio` (`id`, `titulo`, `contenido`, `id_usuario`, `id_lenguaje`, `id_documento`, `fecha`) VALUES
+(1, 'permitir NULOS en todos los campos menos en el id y valor por defecto NULL', 'public String dateToMySQLDate(Date fecha)\r\n{\r\n  java.text.SimpleDateFormat sdf = new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss");\r\n  return sdf.format(fecha);\r\n}', 1, 1, 1, '2013-10-01'),
+(2, 'permitir NULOS en todos los campos menos en el id y valor por defecto NULL', 'public String dateToMySQLDate(Date fecha)\r\n{\r\n  java.text.SimpleDateFormat sdf = new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss");\r\n  return sdf.format(fecha);\r\n}', 1, 1, 1, '2013-10-01'),
+(3, 'Comunicación externa', 'response.sendRedirect("http://www.rafaelaznar.net");\r\nresponse.sendRedirect("/blog/login.jsp"); (el contenedor completa la redirección)', 2, 2, 2, '2013-10-02'),
+(4, 'Como servlet y jsp comparten el mismo request no es necesario pasar los parametros a nivel de sesion.', 'public class ServletToJSP extends HttpServlet {\r\n  public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\r\n  \r\n    //comunicación de un string\r\n    String mensaje = "Ejemplo de comunicación de un', 3, 3, 3, '2013-10-03'),
+(5, 'Nivel de request', '<%\r\nString userName = request.getParameter("name");\r\n%>\r\n<br />\r\nEl nombre del usuario es: <%=userName%>', 4, 4, 4, '2013-10-04'),
+(6, 'Nivel session', '\r\n\r\n    <%session.setAttribute(“usuarioSesion”,userName);%>\r\n    <%pageContext.setAttribute(“usuarioApp”,userName,PageContext.SESSION_SCOPE);%>\r\n    <%=session.getAttribute(“usuarioSesion”);%>\r\n\r\n', 5, 5, 5, '2013-10-05'),
+(7, 'Nivel application', '\r\n\r\n    <%application.setAttribute(“usuarioApp”,userName);%>\r\n    <%pageContext.setAttribute(“usuarioApp”,userName,PageContext.APPLICATION_SCOPE);%>\r\n    <%=application.getAttribute(“usuarioApp”);%>\r\n\r\n', 6, 6, 6, '2013-10-06'),
+(8, 'Nivel page', ' <%pageContext.setAttribute(“usuarioPage”,userName);%>\r\n<%=pageContext.getAttribute(“usuarioPage”);%>\r\n', 7, 7, 7, '2013-10-07'),
+(9, 'web.xml', '<servlet>\r\n  <servlet-name>init</servlet>\r\n  <jsp-file>/initpage.jsp</jsp-file>\r\n  <init-param>\r\n    <param-name>defaultUser</param-name>\r\n    <param-value>Usuario por defecto</param-value>\r\n  </init-param>\r\n</servlet>\r\n<servlet-mapping>\r\n  <servlet-name>', 8, 8, 8, '2013-10-08'),
+(10, 'jspInit()', '<%!\r\npublic void jspInit(){\r\n  String defaultUser = getServletConfig().getInitParameter("defaultUser");\r\n  ServletContext context = getServletContext();\r\n  context.setAttribute("defaultUser",defaultUser);\r\n}\r\n%>\r\n<body>\r\nThe default user from the servlet ', 10, 10, 10, '2013-10-10');
+
+
+
+
+
+
+
+
+
+
+
