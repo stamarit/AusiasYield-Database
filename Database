@@ -7,3 +7,47 @@
 -- --------------------------------------------------------
 
 
+--
+-- Base de datos: `facturacion`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `alumno`
+--
+
+CREATE TABLE IF NOT EXISTS `alumno` (
+  `id` int(6) NOT NULL AUTO_INCREMENT,
+  `id_usuario` int(6) DEFAULT NULL,
+  `dni` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `numexpediente` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `nombre` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `ape1` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `ape2` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `sexo` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `domicilio` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `codpostal` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `poblacion` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `provincia` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `telefono` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `email` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `validado` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Realizada por: José Grancha' AUTO_INCREMENT=11 ;
+
+--
+-- Volcado de datos para la tabla `alumno`
+--
+
+INSERT INTO `alumno` (`id`, `id_usuario`, `dni`, `numexpediente`, `nombre`, `ape1`, `ape2`, `sexo`, `domicilio`, `codpostal`, `poblacion`, `provincia`, `telefono`, `email`, `validado`) VALUES
+(1, 1, '12345678A', '000000001', 'Pepe', 'Benito', 'Rodri', 'Hombre', 'C/Valencia 1-5', '46000', 'Valencia', 'Valencia', '666111222', 'pepe@hotmail.com', 'si'),
+(2, 2, '23456789B', '000000002', 'Juan', 'Senz', 'Pila', 'Hombre', 'C/Pep 5-3', '46020', 'Valencia', 'Valencia', '666122322', 'Juan@hotmail.com', 'si'),
+(3, 3, '34567891C', '0000000003', 'Maria', 'Antonia', 'Gil', 'Mujer', 'C/Ausias March', '46020', 'Valencia', 'Valencia', '777654578', 'Maria@gmail.com', 'si'),
+(4, 4, '21445789A', '000000004', 'Antonia', 'Juanita', 'Menganita', 'Mujer', 'C/La alcuida 50-7', '46020', 'Valencia', 'Valencia', '625532114', 'Antonia@gmail.com', 'no'),
+(5, 5, '54783216Z', '000000005', 'Edu', 'Mem', 'Belingo', 'Hombre', 'C/Pepa Wili 8-7', '46020 ', 'Valencia', 'Valencia', '652123478', 'Ed@hotmail.com', 'si'),
+(6, 6, '23144785G', '000000006', 'José', 'Grancha', 'Bonora', 'Hombre', 'C/Sin nombre', '46020', 'Valencia', 'Valencia', '650203333', 'Jose@hotmail.com', 'si'),
+(7, 7, '23544789V', '000000007', 'Silvia', 'Trempa', 'Luvi', 'Mujer', 'C/Tranvia 56-7', '46020', 'Valencia', 'Valencia', '620147893', 'Silvia@gmail.com', 'si'),
+(8, 8, '24563897J', '000000008', 'Pedro', 'Benito', 'Camela', 'Hombre', 'C/Autovia 52-4', '46020', 'Valencia', 'Valencia', '620147893', 'Pedro@hotmail.com', 'no'),
+(9, 9, '23547711L', '000000009', 'Rafael', 'Lavara', 'Mintonga', 'Hombre', 'C/La alhambra 557-1', '46020', 'Valencia', 'Valencia', '623014785', 'Rafael@gmail.com', 'no'),
+(10, 10, '22144457F', '00000010', 'Daniel', 'Bonti', 'Basta', 'Hombre', 'C/La higuera 45-1', '46211', 'Albacete', 'Albacete', '677845021', 'Daniel@hotmail.com', 'si');
