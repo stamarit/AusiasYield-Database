@@ -413,20 +413,17 @@ INSERT INTO `empresa` (`id`, `id_usuario`, `nombre`, `cif`, `direccion`, `locali
 (9, 27, 'Gigabyte', 'B82400192', 'Bau Chiang Road, 6', 'Hsin-Tien', 'Taipei', 'Taiwan', '+886289124000', '+886289124003', 'Fabricación de componentes informáticos.', 'sui', 'sui-taiwan@gigabyte.com', '0'),
 (10, 30, 'Microsoft', 'B82101640', 'C/Sagunto, 4', 'Madrid', 'Madrid', 'España', '902197198', '917547010', 'Desarrollo sistema operativo y consola', 'sara', 'comercial-sara@microsoft.com', '1');
 
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 
 
 
------------------------------------------------------------
-----------FIN TABLA EMPRESA (JACOBO SEGOVIA)--------------
------------------------------------------------------------
+-- ---------------------------------------------------------
+-- FIN TABLA EMPRESA (JACOBO SEGOVIA)
+-- --------------------------------------------------------
 
 
------------------------------------------------------------
-------INICIO TABLA VOTOCOMENTARIO (JACOBO SEGOVIA)---------
------------------------------------------------------------
+-- --------------------------------------------------------
+-- INICIO TABLA VOTOCOMENTARIO (JACOBO SEGOVIA)---------
+-- --------------------------------------------------------
 
 -- --------------------------------------------------------
 
@@ -459,14 +456,14 @@ INSERT INTO `votocomentario` (`id`, `id_comentario`, `id_usuario`, `valor`) VALU
 (10, 2, 2, 5);
 
 
------------------------------------------------------------
----------FIN TABLA VOTOCOMENTARIO (JACOBO SEGOVIA)---------
------------------------------------------------------------
+-- ---------------------------------------------------------
+-- FIN TABLA VOTOCOMENTARIO (JACOBO SEGOVIA)---------
+-- ---------------------------------------------------------
 
 
------------------------------------------------------------
--------INICIO TABLA VOTODOCUMENTO (JACOBO SEGOVIA)---------
------------------------------------------------------------
+-- --------------------------------------------------------
+-- INICIO TABLA VOTODOCUMENTO (JACOBO SEGOVIA)---------
+-- --------------------------------------------------------
 
 --
 -- Estructura de tabla para la tabla `votodocumento`
@@ -535,7 +532,7 @@ INSERT INTO `stream` (`id`, `id_usuario`, `fecha`, `contenido`) VALUES
 
 
 
---Jorge Caballero
+-- Jorge Caballero
 -- Estructura de tabla para la tabla `incidencias`
 --
 
@@ -571,11 +568,9 @@ INSERT INTO `incidencias` (`id`, `resumen`, `cambios`, `id_estado`, `id_reposito
 
 
 
-
----------------------------------------------------------------------------------------------
-
-Ana Riquelme
-Estructura de tabla para la tabla `repositorio`
+--
+-- Ana Riquelme
+-- Estructura de tabla para la tabla `repositorio`
 --
 
 CREATE TABLE IF NOT EXISTS `repositorio` (
@@ -685,7 +680,7 @@ INSERT INTO `comentario` (`id`, `titulo`, `contenido`, `date`, `id_usuario`, `id
 
 
 
-----------Inicio tabla Contestacion ENRIQUE GIMENO---------------
+-- --------Inicio tabla Contestacion ENRIQUE GIMENO---------------
 
 
 --
@@ -725,12 +720,12 @@ INSERT INTO `contestacion` (`id`, `id_usuario`, `id_pregunta`, `id_opcion`) VALU
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 
 
-------------------Fin tabla Contestacion ENRIQUE GIMENO-------------------------
+-- ----------------Fin tabla Contestacion ENRIQUE GIMENO-------------------------
 
 
 
 
-----------------Inicio tabla Pegunta ENRIQUE GIMENO-----------------------------
+-- --------------Inicio tabla Pegunta ENRIQUE GIMENO-----------------------------
 
 
 
@@ -768,7 +763,7 @@ INSERT INTO `pregunta` (`id`, `descripcion`, `id_cuestionario`) VALUES
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 
 
---------------------Fin tabla Pregunta ENRIQUE GIMENO----------------------------
+-- ------------------Fin tabla Pregunta ENRIQUE GIMENO----------------------------
 
 
 
