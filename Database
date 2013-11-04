@@ -105,3 +105,45 @@ INSERT INTO `votocomentario` (`id`, `id_comentario`, `id_usuario`, `valor`) VALU
 -----------------------------------------------------------
 ---------FIN TABLA VOTOCOMENTARIO (JACOBO SEGOVIA)---------
 -----------------------------------------------------------
+
+
+-----------------------------------------------------------
+-------INICIO TABLA VOTODOCUMENTO (JACOBO SEGOVIA)---------
+-----------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `votodocumento`
+--
+
+CREATE TABLE IF NOT EXISTS `votodocumento` (
+  `id` int(6) NOT NULL AUTO_INCREMENT,
+  `id_documento` int(6) DEFAULT NULL COMMENT 'referencia documento al que se vota',
+  `id_usuario` int(6) DEFAULT NULL COMMENT 'referencia usuario que vota',
+  `valor` int(6) DEFAULT NULL COMMENT 'es el valor que el usuario votó al documento en ese momento',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci AUTO_INCREMENT=11 ;
+
+--
+-- Volcado de datos para la tabla `votodocumento`
+--
+
+INSERT INTO `votodocumento` (`id`, `id_documento`, `id_usuario`, `valor`) VALUES
+(1, 4, 1, 6),
+(2, 3, 2, 4),
+(3, 4, 5, 6),
+(4, 2, 4, 2),
+(5, 1, 5, 7),
+(6, 6, 4, 4),
+(7, 6, 7, 4),
+(8, 9, 4, 6),
+(9, 3, 4, 7),
+(10, 5, 5, 4);
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+
+-----------------------------------------------------------
+----------FIN TABLA VOTODOCUMENTO (JACOBO SEGOVIA)---------
+-----------------------------------------------------------
