@@ -295,3 +295,46 @@ INSERT INTO `usuario` (`id`, `login`, `password`) VALUES
 (28, 'samsung', 'samsung'),
 (29, 'gigabyte', 'gigabyte'),
 (30, 'microsoft', 'microsoft');
+
+
+
+
+
+--
+-- Estructura de tabla para la tabla `follower` (Jordi Eslava Barrera)
+--
+
+CREATE TABLE IF NOT EXISTS `follower` (
+  `id` int(6) NOT NULL AUTO_INCREMENT,
+  `id_usuario1` int(6) DEFAULT NULL,
+  `id_usuario2` int(6) DEFAULT NULL COMMENT '1 usuario es seguido por uno o varios usuarios.',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=11 ;
+
+--
+-- Volcado de datos para la tabla `follower`
+--
+
+INSERT INTO `follower` (`id`, `id_usuario1`, `id_usuario2`) VALUES
+(1, 1, 2),
+(2, 2, 3),
+(3, 2, 4),
+(4, 2, 5),
+(5, 3, 1),
+(6, 3, 2),
+(7, 4, 3),
+(8, 4, 5),
+(9, 5, 3),
+(10, 5, 2);
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+--
+-------------------------------------------- Termina la tabla follower
+
+
+
+
+
