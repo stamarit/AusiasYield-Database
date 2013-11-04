@@ -131,7 +131,7 @@ INSERT INTO `estado` (`id`, `nombre`) VALUES
 
 -- --------------------------------------------------------
 
--- Javier Bonet
+--
 -- Estructura de tabla para la tabla `actividad`
 --
 
@@ -160,32 +160,31 @@ INSERT INTO `actividad` (`id`, `enunciado`, `fecha`, `evaluacion`, `activo`) VAL
 (9, 'Actividad09', '2014-03-02', 2, 1),
 (10, 'Actividad10', '2014-03-14', 2, 1);
 
--- Antonio Navarro
--- Estructura de tabla para la tabla `tipodocumento`
 --
+-- Estructura de tabla para la tabla `actividadoffline`
+-- by Salva Tamarit
 
-CREATE TABLE IF NOT EXISTS `tipodocumento` (
+CREATE TABLE IF NOT EXISTS `actividadoffline` (
   `id` int(6) NOT NULL AUTO_INCREMENT,
-  `descripcion` varchar(255) DEFAULT NULL,
-  `privado` tinyint(4) DEFAULT NULL,
+  `enunciado` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `fecha` date DEFAULT NULL,
+  `calificacion` double(5,2) DEFAULT NULL,
+  `evaluacion` int(6) DEFAULT NULL,
+  `activo` tinyint(4) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=11 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=10 ;
 
--- Antonio Navarro
--- Volcado de datos para la tabla `tipodocumento`
+--
+-- Volcado de datos para la tabla `actividadoffline`
 --
 
-INSERT INTO `tipodocumento` (`id`, `descripcion`, `privado`) VALUES
-(1, 'oferta de trabajo', 1),
-(2, 'currículum', 1),
-(3, 'actividad', 1),
-(4, 'experencia', 1),
-(5, 'formación', 1),
-(6, 'valía', 1),
-(7, 'inscripción', 1),
-(8, 'solicitud', 1),
-(9, 'bolsa de trabajo', 1),
-(10, 'idiomas', 1);
-
-
-
+INSERT INTO `actividadoffline` (`id`, `enunciado`, `fecha`, `calificacion`, `evaluacion`, `activo`) VALUES
+(1, 'enunciado uno', '2013-11-04', 5.30, 1, 0),
+(2, 'enunciado dos', '2013-11-04', 6.50, 1, 1),
+(3, 'enunciado tres', '2013-11-05', 4.50, 2, 1),
+(4, 'enunciado cuatro', '2013-11-04', 8.50, 2, 1),
+(5, 'enunciado seis', '2013-11-04', 9.90, 2, 1),
+(6, 'enunciado siete', '2013-11-04', 10.00, 3, 1),
+(7, 'enunciado ocho', '2013-11-04', 8.70, 2, 0),
+(8, 'enunciado nueve', '2013-11-04', 5.00, 3, 0),
+(9, 'enunciado diez', '2013-11-04', 9.60, 3, 1);
