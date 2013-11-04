@@ -778,3 +778,73 @@ INSERT INTO `pregunta` (`id`, `descripcion`, `id_cuestionario`) VALUES
 
 --------------------Fin tabla Pregunta ENRIQUE GIMENO----------------------------
 
+
+
+
+
+
+
+--
+-- Estructura de tabla para la tabla `lenguaje`
+-- By Diana Ortega Ortega
+--
+
+CREATE TABLE IF NOT EXISTS `lenguaje` (
+  `id` int(6) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=14 ;
+
+--
+-- Volcado de datos para la tabla `lenguaje`
+--
+
+INSERT INTO `lenguaje` (`id`, `nombre`) VALUES
+(1, 'java'),
+(2, 'javascript'),
+(3, 'php'),
+(4, 'css'),
+(5, 'html'),
+(6, 'xml'),
+(7, 'json'),
+(8, 'ruby'),
+(9, 'phyton'),
+(10, 'scala');
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+
+
+
+-- --------------------------------------------------------
+
+-- alejandro
+-- Estructura de tabla para la tabla `meta_documento`
+--
+
+CREATE TABLE IF NOT EXISTS `meta_documento` (
+  `Id` int(6) NOT NULL AUTO_INCREMENT,
+  `titulo` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `fecha` date NOT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=13 ;
+
+--
+-- Volcado de datos para la tabla `meta_documento`
+--
+
+INSERT INTO `meta_documento` (`Id`, `titulo`, `fecha`) VALUES
+(1, 'Inserta un titulo', '2013-11-01'),
+(2, 'Buen titulo(2)', '2013-11-02'),
+(3, 'Buen titulo(3)', '2013-11-03'),
+(4, 'buen titulo(4)', '2013-11-04'),
+(5, 'buen titulo(5)', '2013-11-05'),
+(6, 'buen titulo(6)', '2013-11-06'),
+(7, 'buen titulo(7)', '2013-11-07'),
+(8, 'buen titulo(8)', '2013-11-08'),
+(9, 'buen titulo(9)', '2013-11-09'),
+(10, 'buen titulo(10)', '2013-11-10');
+
+
