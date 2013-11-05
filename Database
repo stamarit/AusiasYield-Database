@@ -23,6 +23,7 @@ CREATE TABLE IF NOT EXISTS `actividad` (
 --
 -- Volcado de datos para la tabla `actividad`
 --------
+-----------------
 
 INSERT INTO `actividad` (`id`, `enunciado`, `fecha`, `evaluacion`, `activo`) VALUES
 (1, 'Actividad01', '2013-10-31', 1, 1),
