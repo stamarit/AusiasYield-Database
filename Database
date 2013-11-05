@@ -24,7 +24,6 @@ CREATE TABLE IF NOT EXISTS `actividad` (
 
 --
 -- Volcado de datos para la tabla `actividad`
--- jlkjlkj
 --
 
 INSERT INTO `actividad` (`id`, `enunciado`, `fecha`, `evaluacion`, `activo`) VALUES
