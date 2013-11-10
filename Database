@@ -599,16 +599,16 @@ CREATE TABLE IF NOT EXISTS `profesor` (
 --
 
 INSERT INTO `profesor` (`id`, `id_usuario`, `nombre`, `ape1`, `ape2`, `sexo`, `telefono`, `email`, `dni`) VALUES
-(1, 11, 'rafael', 'aznar', 'aparici', 'hombre', '600000001', 'raznar@gmail.com', '9876543'),
-(2, 12, 'juan', 'martinez', 'martinez', 'hombre', '600000002', 'juanmartinez@gmail.com', '1234567'),
-(3, 13, 'elena', 'calle', 'soriano', 'mujer', '600000003', 'elenacalle@gmail.com', '8763915'),
-(4, 14, 'luis', 'companys', 'garcia', 'hombre', '60000005', 'luiscompanys@gmail.com', '87625671'),
-(5, 15, 'alba', 'benito', 'albert', 'mujer', '650567732', 'albabenito@gmail.com', '42697213'),
-(6, 16, 'amparo', 'albert', 'laplaza', 'mujer', '606277789', 'albertlaplaza@gmail.com', '74568290'),
-(7, 17, 'ambrosio', 'galindez', 'garcia', 'hombre', '633214596', 'ambrosiogdez@gmail.com', '291755364'),
-(8, 18, 'luisa', 'martinez', 'benito', 'mujer', '687123456', 'luisamartinez@gmail.com', '321456987'),
-(9, 19, 'leon', 'trotsky', 'perez', 'hombre', '625879321', 'leontrotsky@gmail.com', '4789651'),
-(10, 20, 'rosa', 'luxemburgo', 'delicado', 'mujer', '625132147', 'rosaluxe@gmail.com', '321456987');
+(1, 11, 'Rafael', 'Aznar', 'Aparici', 'Hombre', '600000001', 'raznar@gmail.com', '9876543'),
+(2, 12, 'Juan', 'Martinez', 'Martinez', 'Hombre', '600000002', 'juanmartinez@gmail.com', '1234567'),
+(3, 13, 'Elena', 'Calle', 'Soriano', 'Mujer', '600000003', 'elenacalle@gmail.com', '8763915'),
+(4, 14, 'Luis', 'Companys', 'Garcia', 'Hombre', '60000005', 'luiscompanys@gmail.com', '87625671'),
+(5, 15, 'Alba', 'Benito', 'Albert', 'Mujer', '650567732', 'albabenito@gmail.com', '42697213'),
+(6, 16, 'Amparo', 'Albert', 'Laplaza', 'Mujer', '606277789', 'albertlaplaza@gmail.com', '74568290'),
+(7, 17, 'Ambrosio', 'Galindez', 'Garcia', 'Hombre', '633214596', 'ambrosiogdez@gmail.com', '291755364'),
+(8, 18, 'Luisa', 'Martinez', 'Benito', 'Mujer', '687123456', 'luisamartinez@gmail.com', '321456987'),
+(9, 19, 'Leon', 'Trotsky', 'Perez', 'Hombre', '625879321', 'leontrotsky@gmail.com', '4789651'),
+(10, 20, 'Rosa', 'Luxemburgo', 'Delicado', 'Mujer', '625132147', 'rosaluxe@gmail.com', '321456987');
 
 -- 
 -- Añadir tabla cuestionario
