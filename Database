@@ -130,7 +130,7 @@ CREATE TABLE IF NOT EXISTS `backlog` (
   `porcentajecompletado` int(6) DEFAULT NULL,
   `fechaalta` date DEFAULT NULL,
   `sprint` int(6) DEFAULT NULL,
-  `release` int(6) DEFAULT NULL,
+  `releasetabla` int(6) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=11 ;
 
