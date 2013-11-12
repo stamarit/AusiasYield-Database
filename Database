@@ -672,3 +672,18 @@ INSERT INTO `entrada` (`id`, `titulo`, `contenido`, `id_usuario`, `id_hilo`, `fe
 (8, 'Depuración código', 'Depurar código y hacer pruebas', 8, 8, '2013-09-23'),
 (9, 'Listado Usuarios no está disponible', 'Arreglar', 9, 9, '2013-10-09'),
 (10, 'Realizar mantenimiento clases DAO', 'Probar y optimizar', 10, 10, '2013-11-20');
+
+
+--
+-- Estructura de tabla para la tabla `contestacion`
+-- by Salva Tamarit
+--
+
+CREATE TABLE IF NOT EXISTS `contestacion` (
+  `id` int(6) NOT NULL AUTO_INCREMENT,
+  `id_usuario` int(6) DEFAULT NULL,
+  `id_pregunta` int(6) DEFAULT NULL,
+  `id_opcion` int(6) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
+
