@@ -672,3 +672,36 @@ INSERT INTO `entrada` (`id`, `titulo`, `contenido`, `id_usuario`, `id_hilo`, `fe
 (8, 'Depuración código', 'Depurar código y hacer pruebas', 8, 8, '2013-09-23'),
 (9, 'Listado Usuarios no está disponible', 'Arreglar', 9, 9, '2013-10-09'),
 (10, 'Realizar mantenimiento clases DAO', 'Probar y optimizar', 10, 10, '2013-11-20');
+
+--
+-- Base de datos: `ausiasyield`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `hilo`
+--
+
+CREATE TABLE IF NOT EXISTS `hilo` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `fecha` date DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='creada por jose grancha' AUTO_INCREMENT=11 ;
+
+--
+-- Volcado de datos para la tabla `hilo`
+--
+
+INSERT INTO `hilo` (`id`, `nombre`, `fecha`) VALUES
+(1, 'hilo 1', '2013-10-09'),
+(2, 'hilo 1', '2013-10-09'),
+(3, 'hilo 2', '2013-10-09'),
+(4, 'hilo 3', '2013-10-09'),
+(5, 'hilo 4', '2013-10-09'),
+(6, 'hilo 5', '2013-10-09'),
+(7, 'hilo 6', '2013-10-09'),
+(8, 'hilo 7', '2013-10-09'),
+(9, 'hilo 8', '2013-10-09'),
+(10, 'hilo 9', '2013-10-09');
