@@ -1,11 +1,13 @@
--- Base de datos incompleta para el proyecto
+-- --------------------------------------------------------
+
+--
+-- Base de datos: `ausiasyield` - 13-11-2013
+--
+
+-- --------------------------------------------------------
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
-
---
--- Base de datos: `ausiasyield`
---
 
 -- --------------------------------------------------------
 
@@ -478,6 +480,8 @@ CREATE TABLE IF NOT EXISTS `usuario` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=31 ;
 
+-- --------------------------------------------------------
+
 --
 -- Volcado de datos para la tabla `usuario`
 --
@@ -574,7 +578,6 @@ INSERT INTO `votodocumento` (`id`, `id_documento`, `id_usuario`, `valor`) VALUES
 (9, 3, 4, 7),
 (10, 5, 5, 4);
 
-
 -- --------------------------------------------------------
 --
 -- Estructura de tabla para la tabla `profesor`
@@ -594,6 +597,8 @@ CREATE TABLE IF NOT EXISTS `profesor` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=15 ;
 
+-- --------------------------------------------------------
+
 --
 -- Volcado de datos para la tabla `profesor`
 --
@@ -609,6 +614,8 @@ INSERT INTO `profesor` (`id`, `id_usuario`, `nombre`, `ape1`, `ape2`, `sexo`, `t
 (8, 18, 'Luisa', 'Martinez', 'Benito', 'Mujer', '687123456', 'luisamartinez@gmail.com', '321456987'),
 (9, 19, 'Leon', 'Trotsky', 'Perez', 'Hombre', '625879321', 'leontrotsky@gmail.com', '4789651'),
 (10, 20, 'Rosa', 'Luxemburgo', 'Delicado', 'Mujer', '625132147', 'rosaluxe@gmail.com', '321456987');
+
+-- --------------------------------------------------------
 
 -- 
 -- Añadir tabla cuestionario
@@ -637,10 +644,6 @@ INSERT INTO `cuestionario` (`id`, `descripcion`, `fecha`, `evaluacion`, `activo`
 (10,'Descripcion diez','2013-11-01',1,0);
 
 
---
--- Base de datos: `ausiasyield`
---
-
 -- --------------------------------------------------------
 
 --
@@ -656,6 +659,8 @@ CREATE TABLE IF NOT EXISTS `entrada` (
   `fecha` date DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Creada por José Grancha' AUTO_INCREMENT=11 ;
+
+-- --------------------------------------------------------
 
 --
 -- Volcado de datos para la tabla `entrada`
@@ -673,9 +678,6 @@ INSERT INTO `entrada` (`id`, `titulo`, `contenido`, `id_usuario`, `id_hilo`, `fe
 (9, 'Listado Usuarios no está disponible', 'Arreglar', 9, 9, '2013-10-09'),
 (10, 'Realizar mantenimiento clases DAO', 'Probar y optimizar', 10, 10, '2013-11-20');
 
---
--- Base de datos: `ausiasyield`
---
 
 -- --------------------------------------------------------
 
@@ -705,3 +707,19 @@ INSERT INTO `hilo` (`id`, `nombre`, `fecha`) VALUES
 (8, 'hilo 7', '2013-10-09'),
 (9, 'hilo 8', '2013-10-09'),
 (10, 'hilo 9', '2013-10-09');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `contestacion`
+-- by Salva Tamarit
+--
+
+CREATE TABLE IF NOT EXISTS `contestacion` (
+  `id` int(6) NOT NULL AUTO_INCREMENT,
+  `id_usuario` int(6) DEFAULT NULL,
+  `id_pregunta` int(6) DEFAULT NULL,
+  `id_opcion` int(6) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
+
