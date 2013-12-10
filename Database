@@ -863,3 +863,26 @@ INSERT INTO `metadocumentos` (`id`, `id_metadocumento`, `id_documento`, `orden`)
 (4, 2, 13, 7);
 
 -- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `calificacionactividadoffline`
+--
+
+CREATE TABLE IF NOT EXISTS `calificacionactividadoffline` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id_actividadoffline` int(11) NOT NULL,
+  `id_usuario` int(11) NOT NULL,
+  `fecha` date NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=4 ;
+
+--
+-- Volcado de datos para la tabla `calificacionactividadoffline`
+--
+
+INSERT INTO `calificacionactividadoffline` (`id`, `id_actividadoffline`, `id_usuario`, `fecha`) VALUES
+(1, 1, 1, '2013-11-29'),
+(2, 2, 2, '2013-12-24'),
+(3, 3, 3, '2013-12-16');
+
+-- --------------------------------------------------------
