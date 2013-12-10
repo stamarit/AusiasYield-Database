@@ -886,3 +886,44 @@ INSERT INTO `calificacionactividadoffline` (`id`, `id_actividadoffline`, `id_usu
 (3, 3, 3, '2013-12-16');
 
 -- --------------------------------------------------------
+
+
+-- --------------Inicio tabla Pegunta ENRIQUE GIMENO-----------------------------
+
+
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `pregunta`
+--
+
+CREATE TABLE IF NOT EXISTS `pregunta` (
+  `id` int(6) NOT NULL AUTO_INCREMENT,
+  `descripcion` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `id_cuestionario` int(6) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=11 ;
+
+--
+-- Volcado de datos para la tabla `pregunta`
+--
+
+INSERT INTO `pregunta` (`id`, `descripcion`, `id_cuestionario`) VALUES
+(1, '¿Cuál de los siguientes periféricos es de entrada/salida?\r\n', 1),
+(2, 'La unidad de CD-ROM, ¿es un periférico?\r\n', 2),
+(3, 'Cuando utilizamos el término QWERTY, nos estamos refiriendo:\r\n', 3),
+(4, '¿Cuál es el sistema de numeración empleado por los ordenadores?\r\n', 4),
+(5, '¿Cuál de las siguientes unidades de información es la de mayor capacidad?\r\n', 5),
+(6, 'Si a una impresora hubiese que cambiarle el tóner, ¿a qué tipo de\r\nellas sería?\r\n', 6),
+(7, 'El dispositivo que se utiliza para la digitalización de imágenes y texto se denomina:\r\n', 7),
+(8, 'La cantidad mínima de información que podemos representar en un\r\nordenador se denomina:\r\n', 8),
+(9, '¿A qué denominamos byte?\r\n', 9),
+(10, '¿Cuál de los siguientes software origina las aplicaciones que manejan los usuarios finales?\r\n', 10);
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+
+-- ------------------Fin tabla Pregunta ENRIQUE GIMENO----------------------------
