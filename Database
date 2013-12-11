@@ -911,15 +911,15 @@ CREATE TABLE IF NOT EXISTS `pregunta` (
 
 INSERT INTO `pregunta` (`id`, `descripcion`, `id_cuestionario`) VALUES
 (1, '¿Cuál de los siguientes periféricos es de entrada/salida?\r\n', 1),
-(2, 'La unidad de CD-ROM, ¿es un periférico?\r\n', 2),
-(3, 'Cuando utilizamos el término QWERTY, nos estamos refiriendo:\r\n', 3),
-(4, '¿Cuál es el sistema de numeración empleado por los ordenadores?\r\n', 4),
-(5, '¿Cuál de las siguientes unidades de información es la de mayor capacidad?\r\n', 5),
-(6, 'Si a una impresora hubiese que cambiarle el tóner, ¿a qué tipo de\r\nellas sería?\r\n', 6),
-(7, 'El dispositivo que se utiliza para la digitalización de imágenes y texto se denomina:\r\n', 7),
-(8, 'La cantidad mínima de información que podemos representar en un\r\nordenador se denomina:\r\n', 8),
-(9, '¿A qué denominamos byte?\r\n', 9),
-(10, '¿Cuál de los siguientes software origina las aplicaciones que manejan los usuarios finales?\r\n', 10);
+(2, 'La unidad de CD-ROM, ¿es un periférico?\r\n', 1),
+(3, 'Cuando utilizamos el término QWERTY, nos estamos refiriendo:\r\n', 1),
+(4, '¿Cuál es el sistema de numeración empleado por los ordenadores?\r\n', 1),
+(5, '¿Cuál de las siguientes unidades de información es la de mayor capacidad?\r\n', 1),
+(6, 'Si a una impresora hubiese que cambiarle el tóner, ¿a qué tipo de\r\nellas sería?\r\n', 1),
+(7, 'El dispositivo que se utiliza para la digitalización de imágenes y texto se denomina:\r\n', 1),
+(8, 'La cantidad mínima de información que podemos representar en un\r\nordenador se denomina:\r\n', 1),
+(9, '¿A qué denominamos byte?\r\n', 1),
+(10, '¿Cuál de los siguientes software origina las aplicaciones que manejan los usuarios finales?\r\n', 1);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
