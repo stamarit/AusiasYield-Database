@@ -924,3 +924,48 @@ INSERT INTO `pregunta` (`id`, `descripcion`, `id_cuestionario`) VALUES
 
 
 -- ------------------Fin tabla Pregunta ENRIQUE GIMENO----------------------------
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `contestacion`
+--
+CREATE TABLE IF NOT EXISTS `contestacion` (
+  `id` int(6) NOT NULL AUTO_INCREMENT,
+  `id_usuario` int(6) DEFAULT NULL,
+  `id_pregunta` int(6) DEFAULT NULL,
+  `id_opcion` int(6) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=2 ;
+
+--
+-- Volcado de datos para la tabla `contestacion`
+--
+INSERT INTO `contestacion` (`id`, `id_usuario`, `id_pregunta`, `id_opcion`) VALUES
+(1, 1, 1, 1);
+INSERT INTO `contestacion` (`id`, `id_usuario`, `id_pregunta`, `id_opcion`) VALUES
+(1, 2, 1, 2);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `opcion`
+--
+
+CREATE TABLE IF NOT EXISTS `opcion` (
+  `id` int(6) NOT NULL AUTO_INCREMENT,
+  `descripcion` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `id_pregunta` int(6) DEFAULT NULL,
+  `correcta` tinyint(1) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=5 ;
+
+--
+-- Volcado de datos para la tabla `opcion`
+--
+
+INSERT INTO `opcion` (`id`, `descripcion`, `id_pregunta`, `correcta`) VALUES
+(1, 'opcion1', 1, 1),
+(2, 'opcion2', 2, 1),
+(3, 'opcion 3', 1, 0),
+(4, 'opcion 4', 2, 0);
