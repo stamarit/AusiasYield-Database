@@ -921,9 +921,6 @@ INSERT INTO `pregunta` (`id`, `descripcion`, `id_cuestionario`) VALUES
 (9, '¿A qué denominamos byte?\r\n', 1),
 (10, '¿Cuál de los siguientes software origina las aplicaciones que manejan los usuarios finales?\r\n', 1);
 
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 
 
 -- ------------------Fin tabla Pregunta ENRIQUE GIMENO----------------------------
